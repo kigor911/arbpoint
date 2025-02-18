@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbpoint</title>
+
+    <!-- Иконка сайта -->
+    <link rel="shortcut icon" href="source/img/logo.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Стили: Объединить main.css, style.css, loader.css в один файл для сокращения запросов -->
+    <link rel="preload" href="source/style/main.css" as="style">
+    <link rel="stylesheet" href="source/style/main.css">
+    <link rel="stylesheet" href="source/style/style.css">
+    <link rel="stylesheet" href="source/style/loader.css">
+
+    <!-- Swiper CSS - можно оставить CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Font Preload (если используешь кастомные шрифты, например, woff2) -->
+    <!-- <link rel="preload" href="source/fonts/font.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <!-- Лоадер -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader-text">Загрузка сайта...</div>
+        <div class="loader-progress-bar">
+            <div class="loader-progress" id="loader-progress"></div>
+        </div>
+    </div>
+   
+
+    <!-- Хедер -->
+    <div id="header-container"></div>
+
+    <!-- Главный блок -->
+    <div id="statr-block" class="block-container">
+        <h1 class="block-title">Arbpoint</h1>
+        <p class="block-description">
+            Наш информационный ресурс — это современная платформа, объединяющая познавательные статьи, выгодные
+            партнерские программы и широкий спектр онлайн-сервисов. Наш сайт — это ваш проводник в мир знаний,
+            возможностей и цифровых решений.
+        </p>
+        <button class="block-button" id="ripple-button">Читать <img class="bnt_logo" src="source/img/logo.png" alt=""
+                loading="lazy"></button>
+    </div>
+
+    <!-- Статьи -->
+    <h1 class="main-title">Лучшие статьи на сайте</h1>
+    <div  class="main-container" id="article-container"></div>
+
+    <!-- Партнеры -->
+    <h2 class="partners-title">Наши Партнеры</h2>
+    <div data-aos="fade-up" class="partners-section">
+        <div class="swiper">
+            <div class="swiper-wrapper" id="partnersSliderWrapper"></div>
+        </div>
+    </div>
+
+    <!-- Последние статьи -->
+    <div  class="articles-section">
+        <h2 class="partners-title">Последние статьи</h2>
+        <div class="articles-grid" id="articlesGrid"></div>
+    </div>
+
+    <!-- Футер -->
+    <div id="footer-container"></div>
+
+    <!-- JS (все defer!) -->
+<script src="source/script/burger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="source/script/loeader.js" defer></script>
+    <script src="source/script/articl.js" defer></script>
+    <script src="source/script/block.js" defer></script>
+    <script src="source/script/slider.js" defer></script>
+    <script src="source/script/index-state.js" defer></script>
+    <script src="source/script/anim.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>
