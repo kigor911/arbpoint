@@ -58,7 +58,15 @@ body {
     -ms-border-radius: 30px;
     -o-border-radius: 30px
 }
-
+.navMenu{
+    display: flex;
+    align-items: center;
+    
+}
+.header__containe{
+    display: flex;
+    justify-content: space-between;
+}
 .article-card,
 .btn-21,
 nav ul li a,
