@@ -272,8 +272,7 @@
     -o-border-radius: 30px
 }
 
-.btn-34:hover:before,
-.swiper {
+.btn-34:hover:before {
     width: 100%
 }
 .swiper-backface-hidden .swiper-slide{
